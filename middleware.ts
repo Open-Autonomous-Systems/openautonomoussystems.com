@@ -3,8 +3,8 @@ import type { NextRequest } from "next/server"
 
 export function middleware(request: NextRequest) {
   // TODO: Feel free to remove this block
-  if (request.headers?.get("host")?.includes("next-enterprise.vercel.app")) {
-    return NextResponse.redirect("https://blazity.com/open-source/nextjs-enterprise-boilerplate", { status: 301 })
+  if (request.headers?.get("host")?.includes("Open Autonomous Systems")) {
+    return NextResponse.redirect("https://www.openautonomoussystems.com", { status: 301 })
   }
 }
 
