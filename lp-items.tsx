@@ -13,8 +13,8 @@ export const LP_GRID_ITEMS = [
     ),
   },
   {
-    title: "Drone Solutions",
-    description: "Providing autonomous drone solutions",
+    title: "Robotics Solutions",
+    description: "Providing autonomous robotics solutions",
     icon: (
       <svg xmlns="" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-6 w-6">
         <path
