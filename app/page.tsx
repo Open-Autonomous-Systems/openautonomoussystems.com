@@ -26,22 +26,21 @@ export default function Web() {
         <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
           <div className="mx-auto place-self-center">
             <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
-              Next.js Enterprise Boilerplate
+              Open Autonomous Systems
             </h1>
             <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
-              Jumpstart your enterprise project with our feature-packed, high-performance Next.js boilerplate!
-              Experience rapid UI development, AI-powered code reviews, and an extensive suite of tools for a smooth and
-              enjoyable development process.
+              At Open Autonomous Systems, our mission is to revolutionize industries through the power of Vision AI. We
+              are dedicated to enhancing workplace compliance and safety, while pioneering autonomous drone solutions
+              that enable businesses to operate more efficiently, safely, and intelligently. By integrating advanced AI
+              technology into practical applications, we aim to solve today's challenges and anticipate tomorrow's
+              needs, driving a future where technology seamlessly enhances the quality of life and work.
             </p>
-            <Button href="https://github.com/Blazity/next-enterprise" className="mr-3">
+            {/* <Button href="" className="mr-3">
               Get started
             </Button>
-            <Button
-              href="https://vercel.com/new/git/external?repository-url=https://github.com/Blazity/next-enterprise"
-              intent="secondary"
-            >
+            <Button href="" intent="secondary">
               Deploy Now
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>
@@ -53,7 +52,8 @@ export default function Web() {
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary-100 p-1.5 text-blue-700 dark:bg-primary-900 lg:h-12 lg:w-12">
                   {singleItem.icon}
                 </div>
-                <h3 className="mb-2 text-xl font-bold dark:text-white">{singleItem.title}</h3>
+                <Button href="" className="mb-2 text-xl font-bold dark:text-white">{singleItem.title}</Button>
+                {/* className="mb-2 text-xl font-bold dark:text-white" */}
                 <p className="text-gray-500 dark:text-gray-400">{singleItem.description}</p>
               </div>
             ))}
