@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 import { LP_GRID_ITEMS } from "app/lp-items"
+//import Slideshow from "app/slideshow"
 
 export const metadata: Metadata = {
   title: "Open Autonomous Systems",
@@ -58,7 +59,10 @@ export default function Web() {
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary-100 p-1.5 text-blue-700 dark:bg-primary-900 lg:h-12 lg:w-12">
                   <a href={singleItem.url}>{singleItem.icon}</a>
                 </div>
-                <Button href="" className="mb-2 text-xl font-bold dark:text-white">
+                <Button
+                  href=""
+                  className="mb-2 border-none bg-transparent text-xl font-bold text-black dark:text-white"
+                >
                   {singleItem.title}
                 </Button>
                 {/* className="mb-2 text-xl font-bold dark:text-white" */}
@@ -71,25 +75,68 @@ export default function Web() {
           </div>
         </div>
       </section>
+      
+      {/* <section className="bg-white dark:bg-gray-900"> */}
+        {/* <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6"> */}
+          {/* <Slideshow /> Include the Slideshow component here */}
+        {/* </div> */}
+      {/* </section> */}
 
       <section className="bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
-          <h2 className="mb-2 text-xl font-bold dark:text-white">Get In Touch</h2>
-          <p id="GetInTouch">How can we Help ?</p>
+          <h2 className="mb-2 text-center text-xl font-bold dark:text-white">Get In Touch</h2>
+          <p id="GetInTouch" className="mb-6 text-center">
+            How can we help?
+          </p>
           <form
             id="fs-frm"
             name="contact-form"
-            accept-charset="utf-8"
+            acceptCharset="utf-8"
             action="https://formspree.io/f/xayzojle"
             method="post"
+            className="mx-auto flex w-full max-w-lg flex-col space-y-4 rounded-lg bg-white p-8 shadow-md dark:bg-gray-800"
           >
-            <fieldset id="fs-frm-inputs">
-              <label htmlFor="full-name">Full Name</label>
+            <fieldset id="fs-frm-inputs" className="flex flex-col space-y-2">
+              <label htmlFor="full-name" className="dark:text-white">
+                Full Name
+              </label>
+              <input
+                type="text"
+                id="full-name"
+                name="name"
+                placeholder="Your Name"
+                required
+                className="rounded-md border border-gray-300 p-2 dark:border-gray-600 dark:bg-gray-700 dark:text-white"
+              />
+
+              <label htmlFor="email" className="dark:text-white">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+                className="rounded-md border border-gray-300 p-2 dark:border-gray-600 dark:bg-gray-700 dark:text-white"
+              />
+
+              <label htmlFor="message" className="dark:text-white">
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your message"
+                required
+                className="rounded-md border border-gray-300 p-2 dark:border-gray-600 dark:bg-gray-700 dark:text-white"
+                rows={4}
+              ></textarea>
             </fieldset>
             <input type="hidden" name="_subject" value="Contact request from OAS" />
-            <input type="email" name="email" placeholder="Your Email" required="" />
-            <textarea name="message" placeholder="Your message" required=""></textarea>
-            <button type="submit">Send</button>
+            <button type="submit" className="rounded-md bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-600">
+              Send
+            </button>
           </form>
         </div>
       </section>
