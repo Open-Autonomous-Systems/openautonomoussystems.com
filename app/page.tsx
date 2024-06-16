@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 import { LP_GRID_ITEMS } from "app/lp-items"
-//import Slideshow from "app/slideshow"
+import SlideshowPage from "components/Slideshow"
 
 export const metadata: Metadata = {
   title: "Open Autonomous Systems",
@@ -59,13 +59,7 @@ export default function Web() {
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary-100 p-1.5 text-blue-700 dark:bg-primary-900 lg:h-12 lg:w-12">
                   <a href={singleItem.url}>{singleItem.icon}</a>
                 </div>
-                <Button
-                  href=""
-                  className="mb-2 border-none bg-transparent text-xl font-bold text-black dark:text-white"
-                >
-                  {singleItem.title}
-                </Button>
-                {/* className="mb-2 text-xl font-bold dark:text-white" */}
+                <h3 className="mb-2 text-xl font-bold dark:text-white">{singleItem.title}</h3>
                 <p className="text-gray-500 dark:text-gray-400">{singleItem.description}</p>
 
                 {/* <h3 href={singleItem.url} className="mb-2 text-xl font-bold dark:text-white">{singleItem.title}</h3>
@@ -75,12 +69,12 @@ export default function Web() {
           </div>
         </div>
       </section>
-      
-      {/* <section className="bg-white dark:bg-gray-900"> */}
-        {/* <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6"> */}
-          {/* <Slideshow /> Include the Slideshow component here */}
-        {/* </div> */}
-      {/* </section> */}
+
+      <section id="slideshow-section" className="bg-white dark:bg-gray-900">
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
+          <SlideshowPage />
+        </div>
+      </section>
 
       <section className="bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
