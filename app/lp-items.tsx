@@ -22,7 +22,8 @@ export const LP_GRID_ITEMS = [
   },
   {
     title: "SafeOpsia",
-    description: "Revolutionizing workplace safety with cutting-edge Vision AI solutions. We help transform your workplace quality compliance, and safety.",
+    description:
+      "Revolutionizing workplace safety with cutting-edge Vision AI solutions. We help transform your workplace quality compliance, and safety.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +41,7 @@ export const LP_GRID_ITEMS = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
       </svg>
     ),
-    url: "#GetInTouch",
+    url: "#slideshow-section",
   },
   {
     title: "Opensource Downloads",
@@ -61,6 +62,6 @@ export const LP_GRID_ITEMS = [
         />
       </svg>
     ),
-    url: "#GetInTouch",
-  }
+    url: "https://forms.office.com/r/EV0xTSxDX3?embed=true%22",
+  },
 ]
