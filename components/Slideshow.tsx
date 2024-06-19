@@ -49,17 +49,17 @@ const SlideshowPage = () => {
       {/* Slides */}
       <div className="mySlides fade">
         <div className="numbertext">1 / 3</div>
-        <img src="/Safeopsia-1.png" alt="Safeopsia first page" style={{ width: "100%" }} />
+        <img src="/Safeopsia-3.png" alt="Safeopsia first page" style={{ width: "100%" }} />
       </div>
 
       <div className="mySlides fade">
         <div className="numbertext">2 / 3</div>
-        <img src="/Safeopsia-2.png" alt="Safeopsia second page" style={{ width: "100%" }} />
+        <img src="/uavs.png" alt="Safeopsia second page" style={{ width: "100%" }} />
       </div>
 
       <div className="mySlides fade">
         <div className="numbertext">3 / 3</div>
-        <img src="/Safeopsia-3.png" alt="Safeopsia third page" style={{ width: "100%" }} />
+        <img src="/uas_kri.jpg" alt="Safeopsia third page" style={{ width: "100%" }} />
       </div>
 
       {/* Navigation */}
