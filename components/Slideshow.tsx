@@ -1,7 +1,7 @@
 // pages/slideshow.tsx
 "use client"
 
-import { useState, useEffect } from "react"
+import { useEffect, useState } from "react"
 import "../styles/styles.css"
 
 const SlideshowPage = () => {
