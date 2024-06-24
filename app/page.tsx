@@ -30,11 +30,7 @@ export default function Web() {
               Open Autonomous Systems
             </h1>
             <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
-              At Open Autonomous Systems, our mission is to revolutionize industries through the power of Vision AI. We
-              are dedicated to enhancing workplace compliance and safety, while pioneering autonomous robotics solutions
-              that enable businesses to operate more efficiently, safely, and intelligently. By integrating advanced AI
-              technology into practical applications, we aim to solve today's challenges and anticipate tomorrow's
-              needs, driving a future where technology seamlessly enhances the quality of life and work.
+              Leap towards reliable autonomous solutions with our cutting-edge vision AI solutions and smart modules.
             </p>
 
             {/* Open Autonomous Systems
