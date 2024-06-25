@@ -2,6 +2,7 @@ import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 import { LP_GRID_ITEMS } from "app/lp-items"
 import SlideshowPage from "components/Slideshow"
+import Footer from "components/Footer"
 
 export const metadata: Metadata = {
   title: "Open Autonomous Systems",
@@ -128,6 +129,12 @@ export default function Web() {
               Send
             </button>
           </form>
+        </div>
+      </section>
+
+      <section id="footer">
+        <div>
+          <Footer/>
         </div>
       </section>
     </>
