@@ -52,7 +52,7 @@ export default function Web() {
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
           <div className="justify-center space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3">
             {LP_GRID_ITEMS.map((singleItem) => (
-              <div key={singleItem.title} className="flex flex-col items-center justify-center text-center">
+              <div key={singleItem.title} className="flex flex-col items-center justify-center text-center" href={singleItem.url} target="_blank">
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary-100 p-1.5 text-blue-700 dark:bg-primary-900 lg:h-12 lg:w-12">
                   <a href={singleItem.url} target="_blank">{singleItem.icon}</a>
                 </div>
