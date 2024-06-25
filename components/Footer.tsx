@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
                     <div className="footer-col">
                         <h4>follow us</h4>
                         <div className="social-links">
-                            <a href="https://github.com/Open-Autonomous-Systems" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/Open-Autonomous-Systems" target="_blank"><i className="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
